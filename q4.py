@@ -31,7 +31,7 @@ p2.draw()
 p3.draw()
 p4.draw()
 p1.draw()
-for i in range(198):
+for i in range(297):
     p2.sheer()
     p3.sheer()
     p4.sheer()
