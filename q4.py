@@ -1,7 +1,7 @@
 import turtle
 constant = 2
-c1 = 1.2
-c2 = 1.4
+c1 = 0.99
+c2 = 0.99
 class Point:
     def __init__ (self, x, y):
         self.x = x
@@ -18,8 +18,8 @@ class Point:
     def __str__(self):
         return f"({self.x}, {self.y})"
     def sheer(self):
-        self.wa = self.x*c1
-        self.za = self.y*c2
+        self.wa = self.x*c1**i
+        self.za = self.y*c2**i
     def drawboogalo(self):
         turtle.goto(self.wa, self.za)
     
@@ -31,14 +31,15 @@ p2.draw()
 p3.draw()
 p4.draw()
 p1.draw()
-p2.sheer()
-p3.sheer()
-p4.sheer()
-p1.sheer()
-p2.drawboogalo()
-p3.drawboogalo()
-p4.drawboogalo()
-p1.drawboogalo()
+for i in range(198):
+    p2.sheer()
+    p3.sheer()
+    p4.sheer()
+    p1.sheer()
+    p2.drawboogalo()
+    p3.drawboogalo()
+    p4.drawboogalo()
+    p1.drawboogalo()
 
 
 
